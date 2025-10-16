@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+.container{
+    width: 600px;
+    height: 580px;
+   margin-left: 100px;
+}
+.child{
+    width: 75px;
+    height: 70px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row:nth-child(odd) .child:nth-child(odd),
+.row:nth-child(even) .child:nth-child(even) {
+    background-color: rgb(212, 241, 248);
+}
+
+.row:nth-child(odd) .child:nth-child(even),
+.row:nth-child(even) .child:nth-child(odd) {
+    background-color: rgb(142, 193, 205);
+}
